@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_upgraded">SD Maid SE Pro (Stringer)</string>
+    <string name="app_name_upgrade_postfix">(Stringer)</string>
+
+    <string name="upgrade_feature_requires_pro">Requires SD Maid SE Pro</string>
+
+    <string name="upgrades_dashcard_title">Upgrade SD Maid</string>
+    <string name="upgrades_dashcard_body">SD Maid Pro offers better results, more features and options for power users.</string>
+    <string name="upgrades_dashcard_upgrade_action">Upgrade</string>
+
+    <string name="upgrades_gplay_unavailable_error_title">Google Play is unavailable</string>
+    <string name="upgrades_gplay_unavailable_error_description">SD Maid can\'t connect to Google Play. Is Google Play installed and up to date? Is your Google Account logged in? Try clearing the cache of the Google Play app and rebooting your device.</string>
+    <string name="upgrades_no_purchases_found_check_account">No purchases found. Are you using the right account?</string>
+    <string name="upgrade_screen_title">Get SD Maid SE Pro</string>
+    <string name="upgrade_screen_preamble">SD Maid has no ads and doesn\'t sell user data. My work is financed by you ❤️.</string>
+    <string name="upgrade_screen_benefits_title">Advantages</string>
+    <string name="upgrade_screen_benefits_body">• App cleaning 💯\n• Scheduled operations ⏰\n• Extra options for all tools ⚙️\n• Your own deletion rules ✍️\n• A motivated developer 🧙\nand more…</string>
+    <string name="upgrade_screen_how_title">Options</string>
+    <string name="upgrade_screen_how_body">You can choose between a one-time purchase and a cheaper yearly subscription.\nThe subscription starts with a free 14-day trial, after which you\'ll be charged once per year. Trial and subscription are cancellable at any time.\nSame features, just different pricing models.</string>
+    <string name="upgrade_screen_subscription_trial_action">Start free 14-day trial</string>
+    <string name="upgrade_screen_subscription_action">Subscribe</string>
+    <string name="upgrade_screen_subscription_action_hint">The subscription costs %s per year.</string>
+    <string name="upgrade_screen_iap_action">One-time purchase</string>
+    <string name="upgrade_screen_iap_action_hint">The one-time purchase costs %s.</string>
+    <string name="upgrade_screen_thanks_toast">You are the best! ❤️</string>
+    <string name="upgrade_screen_restore_purchase_action">Restore purchase</string>
+    <string name="upgrade_screen_restore_purchase_message">Your upgrade is valid across devices on the same Google account.</string>
+    <string name="upgrade_screen_restore_troubleshooting_msg">Troubleshooting tips for unrecognized upgrades:</string>
+    <string name="upgrade_screen_restore_sync_patience_hint">Play Store synchronization may take time. Try rebooting, clearing Google Play cache or simply wait.</string>
+    <string name="upgrade_screen_restore_multiaccount_hint">Multiple accounts can confuse Google Play. Log out of other accounts or install through the Google Play website, which forces associations with a specific account.</string>
+
+    <string name="nudge_betagoodbye_title">Version 1.0 🥳</string>
+    <string name="nudge_betagoodbye_body">Thank you. We made it this far only together. Development will continue of course, but you can now install SD Maid without opting in for testing on Google Play.</string>
+    <string name="nudge_betagoodbye_hint">You don\'t have to re-install the app. This is already a normal version. Just opt out of testing and you will only receive release updates in the future.</string>
+    <string name="nudge_betagoodbye_reinstall_note">You can switch without reinstalling the app by leaving the testing program and waiting for the next release update. A normal update is possible once there is a release version newer than this pre-release.</string>
+    <string name="nudge_betagoodbye_positive_action">Leave testing program</string>
+    <string name="nudge_betagoodbye_negative_action">Keep testing</string>
+</resources>
