@@ -1,0 +1,61 @@
+name: Code tests & eval
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint-vital:
+    name: Lint vitals
+    strategy:
+      fail-fast: false
+      matrix:
+        flavor: [ Foss,Gplay ]
+        variant: [ Beta,Release ]
+        module: [ app ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+      - name: Setup project and build environment
+        uses: ./.github/actions/common-setup
+
+      - name: Check for fatal lint issues
+        run: ./gradlew lintVital${{ matrix.flavor }}${{ matrix.variant }}
+
+  build-modules:
+    name: Build apps
+    strategy:
+      fail-fast: false
+      matrix:
+        flavor: [ Foss,Gplay ]
+        variant: [ Debug ]
+        module: [ app ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+      - name: Setup project and build environment
+        uses: ./.github/actions/common-setup
+
+      - name: Build modules
+        run: ./gradlew ${{ matrix.module }}:assemble${{ matrix.flavor }}${{ matrix.variant }}
+
+  test-modules:
+    name: Unit tests
+    strategy:
+      fail-fast: false
+      matrix:
+        variant: [ Debug,Beta,Release ]
+        flavor: [ test,testFoss,testGplay ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+      - name: Setup project and build environment
+        uses: ./.github/actions/common-setup
+
+      - name: Test modules
+        run: ./gradlew ${{ matrix.flavor }}${{ matrix.variant }}UnitTest
