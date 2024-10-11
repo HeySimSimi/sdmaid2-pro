@@ -1,4 +1,4 @@
-package eu.darken.sdmse
+package eu.darken.sdmse.pro
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
