@@ -1,0 +1,698 @@
+{
+  "schemaVersion": 1,
+  "appFilter": [
+	{
+	  "packages": ["eu.thedarken.sdm.test"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "contains": ["sdm_test_file_cache_v2"],
+		  "patterns": ["^(?>sdm_test_file_cache_v2)$"]
+		}, {
+		  "locations": ["SDCARD"],
+		  "contains": ["sdm_test_file_cache"],
+		  "patterns": ["^(sdm_test_file_cache.)$"]
+		}, {
+		  "locations": ["PUBLIC_DATA"],
+		  "contains": ["sdm_test_file_cache"],
+		  "patterns": ["^(sdm_test_file_cache.)$"]
+		}, {
+		  "locations": ["PRIVATE_DATA"],
+		  "contains": ["sdm_test_file_cache"],
+		  "patterns": ["^(sdm_test_file_cache.)$"]
+		}, {
+		  "locations": ["PUBLIC_DATA"],
+		  "contains": ["eu.thedarken.sdm.test/sdm_test_internal_hidden_cache_direct"],
+		  "patterns": ["^(?>eu\\.thedarken\\.sdm\\.test/sdm_test_internal_hidden_cache_direct)$"]
+		}, {
+		  "locations": ["PUBLIC_DATA"],
+		  "contains": ["eu.thedarken.sdm.test/sdm_test_internal_hidden_cache"],
+		  "patterns": ["^(?:eu\\.thedarken\\.sdm\\.test/sdm_test_internal_hidden_cache)([\\W\\w]+)$"]
+		}, {
+		  "locations": ["PRIVATE_DATA"],
+		  "contains": ["eu.thedarken.sdm.test/sdm_test_internal_hidden_cache"],
+		  "patterns": ["^(?:eu\\.thedarken\\.sdm\\.test/sdm_test_internal_hidden_cache)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["cm.aptoide.pt", "en.aptoide.com"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": [".aptoide/"],
+		  "patterns": ["^(?:\\.aptoide/icons/)(.+?)$", "^(?:\\.aptoide/apks/)(.+?\\.apk)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.soundcloud.android"],
+	  "fileFilter": [
+		{
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.soundcloud.android/files/skippy/"],
+		  "patterns": ["^(?:com\\.soundcloud\\.android/files/skippy/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.google.android.GoogleCamera"],
+	  "fileFilter": [
+		{
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.google.android.GoogleCamera/files/panorama_sessions/"],
+		  "patterns": [
+			"^(?:com\\.google\\.android\\.GoogleCamera/files/panorama_sessions/)(session_[0-9]+_[0-9]+)$"
+		  ]
+		}, {
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.google.android.GoogleCamera/files/refocus/"],
+		  "patterns": ["^(?:com\\.google\\.android\\.GoogleCamera/files/refocus/)(IMG_[0-9]+_[0-9]+)$"]
+		}, {
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.google.android.GoogleCamera/files/TEMP_SESSIONS/"],
+		  "patterns": ["^(?:com\\.google\\.android\\.GoogleCamera/files/TEMP_SESSIONS/)(PANO_[0-9]+_[0-9]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["org.mozilla.firefox", "org.mozilla.firefox_beta"],
+	  "fileFilter": [
+		{
+		  "locations": ["PRIVATE_DATA"],
+		  "startsWith": ["org.mozilla.firefox", "org.mozilla.firefox_beta"],
+		  "patterns": ["^(?:org\\.mozilla\\.firefox(?:_beta)?/files/mozilla/[\\w]+\\.default/Cache/)(.+?)$"]
+		}, {
+		  "locations": ["PRIVATE_DATA"],
+		  "startsWith": ["org.mozilla.firefox", "org.mozilla.firefox_beta"],
+		  "patterns": ["^(?:org\\.mozilla\\.firefox(?:_beta)?/app_tmpdir/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["org.mozilla.fenix"],
+	  "fileFilter": [
+		{
+		  "locations": ["PRIVATE_DATA"],
+		  "startsWith": ["org.mozilla.fenix"],
+		  "patterns": ["^(?:org\\.mozilla\\.fenix/app_tmpdir/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.google.android.apps.genie.geniewidget"],
+	  "fileFilter": [
+		{
+		  "locations": ["PRIVATE_DATA"],
+		  "startsWith": ["com.google.android.apps.genie.geniewidget"],
+		  "patterns": [
+			"^(?:com\\.google\\.android\\.apps\\.genie\\.geniewidget/app_news_image_cache/)(index.txt)$",
+			"(?:com\\.google\\.android\\.apps\\.genie\\.geniewidget/app_news_image_cache/)([\\w]+)"
+		  ]
+		}
+	  ]
+	}, {
+	  "packages": ["com.levelup.beautifulwidgets", "com.levelup.beautifulwidgets.free"],
+	  "fileFilter": [
+		{
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.levelup.beautifulwidgets/files/Pictures/"],
+		  "patterns": [
+			"^(?:com\\.levelup\\.beautifulwidgets/files/Pictures/)([\\w]+_[0-9]+\\.jpg)$",
+			"^(?:com\\.levelup\\.beautifulwidgets/files/Pictures/)([\\w]+_[0-9]+_[\\w]+_[\\w]+\\.png)$"
+		  ]
+		}
+	  ]
+	}, {
+	  "packages": ["com.frostwire.android"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["FrostWire/.image_cache/"],
+		  "patterns": ["^(?:FrostWire/\\.image_cache/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.citc.wallbase"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["Wallbase/.WallbaseCache/"],
+		  "patterns": ["^(?:Wallbase/\\.WallbaseCache/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.facebook.katana"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["com.facebook.katana/fb_temp/"],
+		  "patterns": ["^(?:com\\.facebook\\.katana/fb_temp/)(\\.facebook_[0-9]+\\.jpg)$"]
+		}, {
+		  "locations": ["PRIVATE_DATA"],
+		  "startsWith": ["com.facebook.katana/files/video-cache/"],
+		  "patterns": ["^(?:com\\.facebook\\.katana/files/video-cache/)([\\W\\w]+)$"]
+		}, {
+		  "locations": ["PRIVATE_DATA"],
+		  "startsWith": ["com.facebook.katana/files/ExoPlayerCacheDir/"],
+		  "patterns": ["^(?:com\\.facebook\\.katana/files/ExoPlayerCacheDir/)([\\W\\w]+)$"]
+		}, {
+		  "locations": ["SDCARD"],
+		  "startsWith": [".facebook_cache/"],
+		  "patterns": ["^(?:\\.facebook_cache/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.facebook.orca"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["com.facebook.orca/fb_temp/"],
+		  "patterns": ["^(?:com\\.facebook\\.orca/fb_temp/)(\\.facebook_[0-9]+\\.jpg)$"]
+		}, {
+		  "locations": ["SDCARD"],
+		  "startsWith": [".facebook_cache/"],
+		  "patterns": ["^(?:\\.facebook_cache/)([\\W\\w]+)$"]
+		}, {
+		  "locations": ["PRIVATE_DATA"],
+		  "startsWith": ["com.facebook.orca/files/ExoPlayerCacheDir/"],
+		  "patterns": ["^(?:com\\.facebook\\.orca/files/ExoPlayerCacheDir/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.antutu.ABenchMark.GL2"],
+	  "fileFilter": [
+		{
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.antutu.ABenchMark.GL2/files/shader/"],
+		  "patterns": ["^(?:com\\.antutu\\.ABenchMark\\.GL2/files/shader/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.qqfriends.com.music", "com.antutu.ABenchMark"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": [".antutu/benchmark/avatars/"],
+		  "patterns": ["^(?:\\.antutu/benchmark/avatars/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.qqfriends.com.music"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": [".antutu/benchmark/avatars/"],
+		  "patterns": ["^(?:\\.antutu/benchmark/avatars/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.audials", "com.audials.paid"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["Audials/temporary/"],
+		  "patterns": ["^(?:Audials/temporary/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.magine.aliceoid"],
+	  "fileFilter": [
+		{
+		  "locations": ["PRIVATE_DATA"],
+		  "startsWith": ["com.magine.aliceoid/data/images/"],
+		  "patterns": ["^(?:com\\.magine\\.aliceoid/data/images/)([0-9-]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.flightradar24pro"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["FlightRadar24/Alerts/"],
+		  "patterns": ["^(?:FlightRadar24/Alerts/)([0-9]{10})$"]
+		}
+	  ]
+	}, {
+	  "packages": [
+		"com.infraware.polarisoffice5tablet",
+		"com.infraware.polarisoffice.entbiz.gd",
+		"com.infraware.polarisoffice4",
+		"com.infraware.office.link",
+		"com.infraware.polarisoffice.entbiz.gd.viewer",
+		"com.infraware.polarisoffice.entbiz.citrix",
+		"com.infraware.polarisoffice5.entbiz.symantec",
+		"com.infraware.polarisoffice"
+	  ],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": [".polaris_temp"],
+		  "patterns": ["^(\\.polaris_temp/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["turbo.client", "turbo.client.free"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["Turbo Client/temp/"],
+		  "patterns": ["^(?:Turbo Client/temp/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.yahoo.mobile.client.android.mail"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["yahoo/mail/imgCache/"],
+		  "patterns": ["^(?:yahoo/mail/imgCache/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.lge.software.cliptray"],
+	  "fileFilter": [
+		{
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": [".cliptray"],
+		  "notContains": [".nomedia"],
+		  "patterns": ["^(?:\\.cliptray/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.domobile.efile"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": [".eFile_trash/"],
+		  "patterns": ["^(?:\\.eFile_trash/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.tencent.movieticket"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": [".QQMovieTicket/.cache/"],
+		  "patterns": ["^(?:\\.QQMovieTicket/\\.cache/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.sohu.sohuvideo"],
+	  "fileFilter": [
+		{
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.sohu.sohuvideo/tempVideo/"],
+		  "patterns": ["^(?:com\\.sohu\\.sohuvideo/tempVideo/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.tencent.lbs.checkin"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": [".lbsGo/avatar_cache/"],
+		  "patterns": ["^(?:\\.lbsGo/avatar_cache/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.wuba.jiaoyou"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["wuba/jiaoyou/"],
+		  "patterns": ["^(?:wuba/jiaoyou/casheimage/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.evernote.skitch"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["Skitch/Temp/"],
+		  "patterns": ["^(?:Skitch/Temp/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.telenav.doudouyou.android.autonavi"],
+	  "fileFilter": [
+		{
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.telenav.doudouyou.android.autonavi/cacheimage/"],
+		  "patterns": ["^(?:com\\.telenav\\.doudouyou\\.android\\.autonavi/cacheimage/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.yahoo.mobile.client.android.weather"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["yahoo/weather/imgCache/"],
+		  "patterns": ["^(?:yahoo/weather/imgCache/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["de.bahn.multicity"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "contains": ["cache/mc.json"],
+		  "patterns": ["^(?:cache/)(mc.json)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.mikedepaul.perfectscreenshot", "com.mikedepaul.perfectscreenshotadfree"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["Pictures/perfectscreenshot_tmp/"],
+		  "notContains": [".nomedia"],
+		  "patterns": ["^(?:Pictures/perfectscreenshot_tmp/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.cleanmaster.mguard"],
+	  "fileFilter": [
+		{
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.cleanmaster.mguard/files/iconcache/"],
+		  "patterns": ["^(?:com\\.cleanmaster\\.mguard/files/iconcache/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.magix.camera_mx"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["Magix/.tmp/"],
+		  "patterns": ["^(?:Magix/\\.tmp/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.ninegag.android.app"],
+	  "fileFilter": [
+		{
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.ninegag.android.app/files/"],
+		  "notContains": [".nomedia"],
+		  "patterns": [
+			"^(?:com\\.ninegag\\.android\\.app/files/images/)([\\W\\w]+)$",
+			"^(?:com\\.ninegag\\.android\\.app/files/gags/)([\\W\\w]+)$",
+			"^(?:com\\.ninegag\\.android\\.app/files/gags_thumb/)([\\W\\w]+)$",
+			"^(?:com\\.ninegag\\.android\\.app/files/gifs/)([\\W\\w]+)$",
+			"^(?:com\\.ninegag\\.android\\.app/files/mp4s/)([\\W\\w]+)$",
+			"^(?:com\\.ninegag\\.android\\.app/files/uploads/)([\\W\\w]+)$",
+			"^(?:com\\.ninegag\\.android\\.app/files/avatar/)([\\W\\w]+)$",
+			"^(?:com\\.ninegag\\.android\\.app/files/covers/)([\\W\\w]+)$"
+		  ]
+		}
+	  ]
+	}, {
+	  "packages": ["com.amazon.mp3", "com.amazon.bueller.music"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["amazonmp3/temp/"],
+		  "patterns": ["^(?:amazonmp3/temp/)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.jundroo.SimplePlanes"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": [".EveryplayCache/com.jundroo.SimplePlanes"],
+		  "patterns": ["^(?>.EveryplayCache/com.jundroo.SimplePlanes)([\\W\\w]+)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.infraware.polarisviewer4"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": [".PolarisViewer4/polarisTemp/"],
+		  "patterns": ["^(?>\\.PolarisViewer4/polarisTemp/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": [
+		"com.slingmedia.slingPlayer",
+		"com.slingmedia.slingPlayerTablet",
+		"com.slingmedia.slingPlayerTabletFreeApp",
+		"com.slingmedia.slingPlayerFreeApp"
+	  ],
+	  "fileFilter": [
+		{
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.slingmedia.slingPlayer"],
+		  "patterns": [
+			"^(?:com\\.slingmedia\\.slingPlayer[\\w]*?/files/tsDump/)([\\W\\w]+)$",
+			"^(?:com\\.slingmedia\\.slingPlayer[\\w]*?/files/logDump/)([\\W\\w]+)$"
+		  ]
+		}
+	  ]
+	}, {
+	  "packages": ["com.skype.raider", "com.skype.rover"],
+	  "fileFilter": [
+		{
+		  "locations": ["PRIVATE_DATA"],
+		  "startsWith": ["com.skype.rover/files"],
+		  "patterns": [
+			"^(?:com\\.skype\\.rover/files/[\\w,._-]+?/media_messaging/emo_cache(?:_v[0-9])?/)(.+?)$",
+			"^(?:com\\.skype\\.rover/files/[\\w,._-]+?/media_messaging/media_cache(?:_v[0-9])?/)(.+?)$"
+		  ]
+		}, {
+		  "locations": ["PRIVATE_DATA"],
+		  "startsWith": ["com.skype.raider/files"],
+		  "patterns": [
+			"^(?:com\\.skype\\.raider/files/[\\w,._-]+?/media_messaging/emo_cache(?:_v[0-9])?/)(.+?)$",
+			"^(?:com\\.skype\\.raider/files/[\\w,._-]+?/media_messaging/media_cache(?:_v[0-9])?/)(.+?)$"
+		  ]
+		}
+	  ]
+	}, {
+	  "packages": [
+		"com.estrongs.android.pop",
+		"com.estrongs.android.pop.cupcake",
+		"com.estrongs.android.pop.app.shortcut",
+		"com.estrongs.android.pop.pro"
+	  ],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": [".estrongs/dianxin/notify"],
+		  "patterns": ["^(?>\\.estrongs/dianxin/notify/.cache/)(.+?)$"]
+		}, {
+		  "locations": ["SDCARD"],
+		  "startsWith": [".estrongs/.app_icon_back"],
+		  "patterns": ["^(?>\\.estrongs/\\.app_icon_back/)(.+?)$"]
+		}, {
+		  "locations": ["SDCARD"],
+		  "startsWith": ["dianxin/notify"],
+		  "patterns": ["^(?>dianxin/notify/.cache/)(.+?)$"]
+		}, {
+		  "locations": ["SDCARD"],
+		  "startsWith": [".BD_SAPI_CACHE/"],
+		  "patterns": ["^(?>\\.BD_SAPI_CACHE/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.ksmobile.launcher"],
+	  "fileFilter": [
+		{
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.ksmobile.launcher/files/iconcache/"],
+		  "patterns": ["^(?>com\\.ksmobile\\.launcher/files/iconcache/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.ecareme.asuswebstorage"],
+	  "fileFilter": [
+		{
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.ecareme.asuswebstorage/folderBrowseCache/"],
+		  "patterns": ["^(?>com\\.ecareme\\.asuswebstorage/folderBrowseCache/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.everyplay.everyplayapp"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": [".EveryplayCache/images/"],
+		  "notContains": [".nomedia"],
+		  "patterns": ["^(?>\\.EveryplayCache/images/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": [
+		"com.android.gallery3d",
+		"com.google.android.gallery3d",
+		"com.sec.android.gallery3d"
+	  ],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": [".face/"],
+		  "notContains": [".nomedia"],
+		  "patterns": ["^(?>\\.face/)(.+?)$"]
+		}, {
+		  "locations": ["PRIVATE_DATA"],
+		  "startsWith": ["com.sec.android.gallery3d/Temp/"],
+		  "patterns": ["^(?:com\\.sec\\.android\\.gallery3d/Temp/)([0-9]+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.amazon.mShop.android"],
+	  "fileFilter": [
+		{
+		  "locations": ["PRIVATE_DATA"],
+		  "startsWith": ["com.amazon.mShop.android/files/update-"],
+		  "patterns": ["^(com\\.amazon\\.mShop\\.android/files/update-\\d+-\\d+\\.apk)$"]
+		}, {
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.amazon.mShop.android/files/apks/update-"],
+		  "patterns": ["^(com\\.amazon\\.mShop\\.android/files/apks/update-\\d+-\\d+\\.apk)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.plantronics.findmyheadset"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["cabotEL.log"],
+		  "patterns": ["^(cabotEL\\.log)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.google.android.apps.motionstills"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["motionstills/warp_grid_cache"],
+		  "notContains": [".nomedia"],
+		  "patterns": ["^(?:motionstills/warp_grid_cache/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.plexapp.android"],
+	  "fileFilter": [
+		{
+		  "locations": ["PRIVATE_DATA"],
+		  "startsWith": ["com.plexapp.android/Plex Media Server/Cache"],
+		  "patterns": ["^(?:com.plexapp.android/Plex Media Server/Cache/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.tcl.ota.bb"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": [".fotadownload/"],
+		  "patterns": ["^(?:.fotadownload/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": [
+		"com.UCMobile",
+		"com.UCMobile.intl",
+		"com.UCMobile.x86",
+		"com.UCMobile.xiaoma",
+		"com.UCMobile.ac",
+		"com.UCMobile.testch",
+		"com.uc.browser.en",
+		"com.uc.browser",
+		"com.uc.browser.hd"
+	  ],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["UCDownloads/video/.apolloCache", "UCDownloadsPad/video/.apolloCache"],
+		  "patterns": ["^(?:UCDownloads(?:Pad)?/video/.apolloCache\/)(.+?)$"]
+		}, {
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.UCMobile.intl/files/UcDownloads/video/.apolloCache"],
+		  "patterns": ["^(?:com\\.UCMobile\\.intl/files/UcDownloads/video/\\.apolloCache/)(.+?)$"]
+		}, {
+		  "locations": ["SDCARD"],
+		  "startsWith": ["supercache"],
+		  "patterns": ["^(?:supercache/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.android.chrome"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["Download/", ".crdownload"],
+		  "patterns": ["^(?:Download/)(.+?.crdownload)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.zhiliaoapp.musically"],
+	  "fileFilter": [
+		{
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.zhiliaoapp.musically/files/frescocache/"],
+		  "patterns": ["^(?>com\\.zhiliaoapp\\.musically/files/frescocache/)(.+?)$"]
+		}, {
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.zhiliaoapp.musically/Videos/"],
+		  "patterns": ["^(?>com\\.zhiliaoapp\\.musically/Videos/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.keerby.formatfactory"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["Keerby/FormatFactory/tmp/"],
+		  "patterns": ["^(?>Keerby/FormatFactory/tmp/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.google.android.apps.plus"],
+	  "fileFilter": [
+		{
+		  "locations": ["PUBLIC_DATA", "PRIVATE_DATA"],
+		  "startsWith": ["com.google.android.apps.plus/app_localMedia/"],
+		  "patterns": ["^(?>com\\.google\\.android\\.apps\\.plus/app_localMedia/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["ru.zdevs.zarchiver"],
+	  "fileFilter": [
+		{
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["ru.zdevs.zarchiver/files/"],
+		  "patterns": ["^(?>ru\\.zdevs\\.zarchiver/files/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.kingwaytek.naviking"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["LocalKingMapTempN5/"],
+		  "patterns": ["^(?>LocalKingMapTempN5/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.tcl.ota.bb"],
+	  "fileFilter": [
+		{
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": [".fotaApps/"],
+		  "patterns": ["^(?>\\.fotaApps/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.whatsapp"],
+	  "fileFilter": [
+		{
+		  "locations": ["SDCARD"],
+		  "startsWith": ["WhatsApp/.Shared/"],
+		  "patterns": ["^(?>WhatsApp/\\.Shared/)(.+?)$"]
+		}
+	  ]
+	}, {
+	  "packages": ["com.lonelycatgames.Xplore"],
+	  "fileFilter": [
+		{
+		  "locations": ["PUBLIC_DATA"],
+		  "startsWith": ["com.lonelycatgames.Xplore/files/Send Anywhere/.temp/"],
+		  "patt
