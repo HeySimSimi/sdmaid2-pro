@@ -1,0 +1,584 @@
+[
+  {
+	"pkgs": ["android"],
+	"mrks": [
+	  {"loc": "SDCARD", "path": ".android_secure", "flags": ["custodian"]},
+	  {"loc": "PRIVATE_DATA", "path": ".drm", "flags": ["custodian"]},
+	  {"loc": "PRIVATE_DATA", "path": ".sktdrm", "flags": ["custodian"]},
+	  {"loc": "SDCARD", "path": "Alarms", "flags": ["custodian"]},
+	  {"loc": "SDCARD", "path": "Audiobooks", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": "Android", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": "Android/data", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": "Android/obb", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": "Android/media", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": "bugreports", "flags": ["custodian"]},
+	  {"loc": "SDCARD", "path": "beam", "flags": ["custodian"]},
+	  {"loc": "SDCARD", "path": "Bluetooth", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": "Documents", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": "DCIM", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": "DCIM/Camera", "flags": ["custodian"]},
+	  {"loc": "SDCARD", "path": "LOST.DIR", "flags": ["custodian"]},
+	  {"loc": "SDCARD", "path": "bluetooth", "flags": ["custodian"]},
+	  {"loc": "SDCARD", "path": "Books", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": "Download", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": "Movies", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": "Games", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": "Music", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": "Pictures", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": "Podcasts", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": "Playlists", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": "Notifications", "flags": ["custodian"]},
+	  {"loc": "SDCARD", "path": "Ringtones", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": ".is_audio_player", "flags": ["custodian"]},
+	  {"loc": "SDCARD", "path": ".MetaEcfsFile", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": ".history", "flags": ["custodian", "common"]},
+	  {"loc": "SDCARD", "path": "Recording", "flags": ["custodian", "common"]},
+	  {"loc": "PRIVATE_DATA", "path": "hosts", "flags": ["custodian"]},
+	  {"loc": "PRIVATE_DATA", "path": ".nomedia", "flags": ["custodian"]},
+	  {"loc": "PRIVATE_DATA", "path": "media", "flags": ["custodian"]},
+	  {"loc": "PUBLIC_DATA", "path": ".nomedia", "flags": ["common"]},
+	  {"loc": "PUBLIC_OBB", "path": ".nomedia", "flags": ["common"]},
+	  {"loc": "PRIVATE_DATA", "path": "uninstalled_delapp.xml", "flags": ["custodian"]},
+	  {"loc": "SDCARD", "path": "ScreenRecorder", "flags": ["custodian", "common"]}
+	]
+  }, {
+  "pkgs": ["eu.thedarken.sdm", "eu.thedarken.sdm.huawei"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "debug_sdm"},
+	{"loc": "SDCARD", "path": "forcelog_sdm"},
+	{"loc": "SDCARD", "path": "verbose_sdm"},
+	{"loc": "SDCARD", "path": "sdm_force_debug_run"},
+	{"loc": "SDCARD", "contains": "SD_Maid-Exclusions-", "regex": "^(?:.+?\/)*(?:SD_Maid-Exclusions-.+?\\.json)$"},
+	{"loc": "SDCARD", "contains": ".scuf.sdm.json", "regex": "(?:.+?)(?:\\.scuf\\.sdm\\.json)"},
+	{"loc": "SDCARD", "contains": "pathdump#_", "regex": "^(?:.+?\/)*(?:pathdump#_.+?\\.txt)$"}
+  ]
+}, {
+  "pkgs": ["eu.thedarken.sdm.unlocker"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "debug_sdm"},
+	{"loc": "SDCARD", "path": "forcelog_sdm"},
+	{"loc": "SDCARD", "path": "verbose_sdm"}
+  ]
+}, {
+  "pkgs": ["com.android.bluetooth"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "bluetooth", "flags": ["keeper"]},
+	{"loc": "SDCARD", "path": "btsnoop_hci.log"},
+	{"loc": "SDCARD", "path": "btsnoop_hci.log.last"},
+	{"loc": "PUBLIC_DATA", "path": "btsnoop_hci.log"},
+	{"loc": "PUBLIC_DATA", "path": "btsnoop_hci.log.last"}
+  ]
+}, {
+  "pkgs": ["iw.avatar"],
+  "mrks": [{"loc": "SDCARD", "path": ".budingdoyen"}]
+}, {
+  "pkgs": ["com.real.RealPlayer", "com.real.RealPlayerCloud"],
+  "mrks": [
+	{"loc": "SDCARD", "path": ".helix.thumbnails"},
+	{"loc": "SDCARD", "path": "RealPlayer", "flags": ["keeper"]}
+  ]
+}, {
+  "pkgs": ["cn.goapk.market"],
+  "mrks": [{"loc": "SDCARD", "path": "gomarket"}]
+}, {
+  "pkgs": ["com.i9i8.nanopage"],
+  "mrks": [{"loc": "SDCARD", "path": ".nanopage"}]
+}, {
+  "pkgs": ["cn.jingling.picblog"],
+  "mrks": [{"loc": "SDCARD", "path": ".PhotoSola"}]
+}, {
+  "pkgs": ["vStudio.Android.Camera360"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "Camera360", "flags": ["keeper"]},
+	{"loc": "SDCARD", "path": ".camera360temp"}
+  ]
+}, {
+  "pkgs": ["vStudio.Android.Camera360Memento"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "Camera360", "flags": ["keeper"]},
+	{"loc": "SDCARD", "path": ".camera360temp"}
+  ]
+}, {
+  "pkgs": ["com.qq.xiaoyou"],
+  "mrks": [{"loc": "SDCARD", "path": "com.qq.xiaoyou"}]
+}, {
+  "pkgs": ["com.byread.reader"],
+  "mrks": [{"loc": "SDCARD", "path": "byread"}]
+}, {
+  "pkgs": ["net.dev123.yibo"],
+  "mrks": [{"loc": "SDCARD", "path": ".yibo"}]
+}, {
+  "pkgs": ["it.medieval.blueftp"],
+  "mrks": [
+	{"loc": "SDCARD", "path": ".BlueFTP_thumbnails"},
+	{"loc": "SDCARD", "path": ".medieval_software"}
+  ]
+}, {
+  "pkgs": ["alei.switchpro"],
+  "mrks": [{"loc": "SDCARD", "path": ".switchpro"}]
+}, {
+  "pkgs": ["com.duomi.android.manufacturer"],
+  "mrks": [{"loc": "SDCARD", "path": "DUOMI"}]
+}, {
+  "pkgs": ["udk.android.reader", "udk.android.reader.az"],
+  "mrks": [{"loc": "SDCARD", "path": "ezPDFReader"}]
+}, {
+  "pkgs": ["obg1.FaceBlender"],
+  "mrks": [{"loc": "SDCARD", "path": "FaceBlender"}]
+}, {
+  "pkgs": ["com.joelapenna.foursquared"],
+  "mrks": [{"loc": "SDCARD", "path": "foursquare"}]
+}, {
+  "pkgs": ["jb.activity.mbook"],
+  "mrks": [{"loc": "SDCARD", "path": "ggbookReader"}]
+}, {
+  "pkgs": ["youcan.reader"],
+  "mrks": [{"loc": "SDCARD", "path": "ifeng_android"}]
+}, {
+  "pkgs": ["com.ifeng.news"],
+  "mrks": [{"loc": "SDCARD", "path": "ifengnews"}]
+}, {
+  "pkgs": ["com.justpictures"],
+  "mrks": [{"loc": "SDCARD", "path": "JustPictures", "flags": ["keeper"]}]
+}, {
+  "pkgs": ["com.kaixin001.activity"],
+  "mrks": [{"loc": "SDCARD", "path": "kaixin001"}]
+}, {
+  "pkgs": ["com.kingreader.framework"],
+  "mrks": [{"loc": "SDCARD", "path": "KingReader"}]
+}, {
+  "pkgs": ["cn.kuwo.player"],
+  "mrks": [{"loc": "SDCARD", "path": "KuwoMusic", "flags": ["keeper"]}]
+}, {
+  "pkgs": ["cn.com.mbook.android"],
+  "mrks": [{"loc": "SDCARD", "path": "mbook"}]
+}, {
+  "pkgs": ["com.yuelian.meishitai"],
+  "mrks": [{"loc": "SDCARD", "path": "meishidaren"}]
+}, {
+  "pkgs": ["cn.miren.browser"],
+  "mrks": [{"loc": "SDCARD", "path": "miren_browser"}]
+}, {
+  "pkgs": ["com.moji.mjweather"],
+  "mrks": [{"loc": "SDCARD", "path": "moji"}]
+}, {
+  "pkgs": ["com.nubinews.chinareader"],
+  "mrks": [{"loc": "SDCARD", "path": "NubiNews"}]
+}, {
+  "pkgs": ["com.dragon.android.pandaspace"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "PandaSpace"},
+	{"loc": "SDCARD", "path": "ndcommplatform"}
+  ]
+}, {
+  "pkgs": ["obg1.PhotafPro"],
+  "mrks": [{"loc": "SDCARD", "path": "Photaf", "flags": ["keeper"]}]
+}, {
+  "pkgs": ["com.snda.uvanmobile"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "qieke"},
+	{"loc": "SDCARD", "path": "qieke_log"}
+  ]
+}, {
+  "pkgs": ["com.tencent.padbrowser"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "QQBrowser", "flags": ["keeper"]},
+	{"loc": "SDCARD", "path": "miniqqmusic", "flags": ["keeper"]},
+	{"loc": "SDCARD", "path": "qqmusic", "flags": ["keeper"]},
+	{"loc": "SDCARD", "path": "QQReader"}
+  ]
+}, {
+  "pkgs": ["com.tencent.qbx"],
+  "mrks": [{"loc": "SDCARD", "path": "QQBrowser"}]
+}, {
+  "pkgs": ["com.tencent.mtt"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "QQBrowser"},
+	{"loc": "SDCARD", "path": "QQDownload"},
+	{"loc": "SDCARD", "path": "qvod"}
+  ]
+}, {
+  "pkgs": ["com.tencent.qqpinyin"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "QQInput"},
+	{"loc": "SDCARD", "path": "qqpinyin"},
+	{"loc": "SDCARD", "path": "tencent/QQInput"}
+  ]
+}, {
+  "pkgs": ["com.tencent.qqmusic"],
+  "mrks": [{"loc": "SDCARD", "path": "qqmusic", "flags": ["keeper"]}]
+}, {
+  "pkgs": ["com.qq.reader"],
+  "mrks": [{"loc": "SDCARD", "path": "QQReader"}]
+}, {
+  "pkgs": ["com.rss.activity"],
+  "mrks": [{"loc": "SDCARD", "path": "qqrss"}]
+}, {
+  "pkgs": ["panso.remword"],
+  "mrks": [{"loc": "SDCARD", "path": "Remword"}]
+}, {
+  "pkgs": ["tiger.unfamous"],
+  "mrks": [{"loc": "SDCARD", "path": "ShanTing"}]
+}, {
+  "pkgs": ["com.skyfire.browser"],
+  "mrks": [{"loc": "SDCARD", "path": "skyfire"}]
+}, {
+  "pkgs": ["com.tencent.sunnyranch"],
+  "mrks": [{"loc": "SDCARD", "path": "sunnyranch"}]
+}, {
+  "pkgs": ["xunlei.com"],
+  "mrks": [{"loc": "SDCARD", "path": "thunder"}]
+}, {
+  "pkgs": ["bubei.tingshu"],
+  "mrks": [{"loc": "SDCARD", "path": "tingshu"}]
+}, {
+  "pkgs": ["com.tiantian.android.browser"],
+  "mrks": [{"loc": "SDCARD", "path": "TTDownload"}]
+}, {
+  "pkgs": ["com.tudou.android"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "tudoucache"},
+	{"loc": "SDCARD", "path": "tudou"}
+  ]
+}, {
+  "pkgs": ["uc.ucplayer"],
+  "mrks": [{"loc": "SDCARD", "path": "ucplayer"}]
+}, {
+  "pkgs": ["com.piaomsg"],
+  "mrks": [{"loc": "SDCARD", "path": "wingletter"}]
+}, {
+  "pkgs": ["cn.joy.android.activity"],
+  "mrks": [{"loc": "SDCARD", "path": "www.joy.cn"}]
+}, {
+  "pkgs": ["com.xiaomi.xshare"],
+  "mrks": [{"loc": "SDCARD", "path": "xshare_downloads"}]
+}, {
+  "pkgs": ["com.youdao.dict"],
+  "mrks": [{"loc": "SDCARD", "path": "Youdao"}]
+}, {
+  "pkgs": ["com.youdao.translator"],
+  "mrks": [{"loc": "SDCARD", "path": "Youdao"}]
+}, {
+  "pkgs": ["com.yingyonghui.market"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "Yingyonghui"},
+	{"loc": "SDCARD", "path": "mipush"},
+	{"loc": "SDCARD", "path": ".DataStorage"},
+	{"loc": "SDCARD", "path": ".UTSystemConfig"},
+	{"loc": "SDCARD", "path": "libs", "flags": ["common"]},
+	{"loc": "SDCARD", "path": "system", "flags": ["common"]}
+  ]
+}, {
+  "pkgs": ["mobi.mgeek.TunnyBrowser"],
+  "mrks": [{"loc": "SDCARD", "path": "TunnyBrowser"}]
+}, {
+  "pkgs": ["com.dolphin.browser.lab.en"],
+  "mrks": [{"loc": "SDCARD", "path": "TunnyBrowser"}]
+}, {
+  "pkgs": ["com.handcent.nextsms"],
+  "mrks": [{"loc": "SDCARD", "path": "handcent", "flags": ["keeper"]}]
+}, {
+  "pkgs": ["de.softxperience.android.noteeverything"],
+  "mrks": [{"loc": "SDCARD", "path": "noteeverything", "flags": ["keeper"]}]
+}, {
+  "pkgs": ["com.pplive.androidpad", "com.pplive.androidphone"],
+  "mrks": [{"loc": "SDCARD", "path": "PPTV"}]
+}, {
+  "pkgs": ["com.tencent.android"],
+  "mrks": [{"loc": "SDCARD", "path": "apadqq-images"}]
+}, {
+  "pkgs": ["com.mappn.gfan"],
+  "mrks": [{"loc": "SDCARD", "path": "gfan"}]
+}, {
+  "pkgs": ["com.tf.thinkdroid.amarket"],
+  "mrks": [{"loc": "SDCARD", "path": ".thinkfree"}]
+}, {
+  "pkgs": ["com.tf.thinkdroid.samsung"],
+  "mrks": [{"loc": "SDCARD", "path": ".thinkfree"}]
+}, {
+  "pkgs": ["com.lge.thinkfreeviewer"],
+  "mrks": [{"loc": "SDCARD", "path": ".thinkfree"}]
+}, {
+  "pkgs": ["com.mobiders.mostit"],
+  "mrks": [{"loc": "SDCARD", "path": "mostit"}]
+}, {
+  "pkgs": ["com.android307.MicroBlog"],
+  "mrks": [{"loc": "SDCARD", "path": "TwitterForSina"}]
+}, {
+  "pkgs": ["com.intsig.BizCardReader"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "bcr", "flags": ["keeper"]},
+	{"loc": "SDCARD", "path": ".scanner_undo"}
+  ]
+}, {
+  "pkgs": ["com.intsig.BCRLite"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "bcr", "flags": ["keeper"]},
+	{"loc": "SDCARD", "path": ".scanner_undo"}
+  ]
+}, {
+  "pkgs": ["bdmobile.android.app"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "baidu/.zhangbaicache"},
+	{"loc": "SDCARD", "path": "baidu/downloads"}
+  ]
+}, {
+  "pkgs": ["com.baidu.input", "com.baidu.padinput", "com.baidu.input_yijia", "com.baidu.input_mi"],
+  "mrks": [{"loc": "SDCARD", "path": "baidu/ime"}]
+}, {
+  "pkgs": ["com.ichi2.anki"],
+  "mrks": [{"loc": "SDCARD", "path": "AnkiDroid"}]
+}, {
+  "pkgs": ["com.metago.astro"],
+  "mrks": [{"loc": "SDCARD", "path": "tmp/.astro/"}]
+}, {
+  "pkgs": ["com.gyc.ace.kjv"],
+  "mrks": [{"loc": "SDCARD", "path": "acebible_kjv"}]
+}, {
+  "pkgs": ["com.eaa.calvinandhobbes"],
+  "mrks": [{"loc": "SDCARD", "path": "calvinandhobbes"}]
+}, {
+  "pkgs": ["com.marvin.espeak"],
+  "mrks": [{"loc": "SDCARD", "path": "espeak-data"}]
+}, {
+  "pkgs": ["com.datpiff.mobile"],
+  "mrks": [{"loc": "SDCARD", "path": "Music/DatPiff", "flags": ["keeper"]}]
+}, {
+  "pkgs": ["com.handmark.mpp.entrep"],
+  "mrks": [{"loc": "SDCARD", "path": "Handmark"}]
+}, {
+  "pkgs": ["com.epocrates"],
+  "mrks": [{"loc": "SDCARD", "path": "epocrates"}]
+}, {
+  "pkgs": ["com.ezpeer.ezpeerplus"],
+  "mrks": [{"loc": "SDCARD", "path": "ezPeerPlus"}]
+}, {
+  "pkgs": ["sunnsoft.felleskatalogen"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "FelleskatalogenData.tmp"},
+	{"loc": "SDCARD", "path": "FelleskatalogenData11.dat"}
+  ]
+}, {
+  "pkgs": ["org.freemp3droid"],
+  "mrks": [{"loc": "SDCARD", "path": "FreeMP3Droid", "flags": ["keeper"]}]
+}, {
+  "pkgs": ["org.lds.ldssa"],
+  "mrks": [{"loc": "SDCARD", "path": "ldssa"}]
+}, {
+  "pkgs": ["org.thinking.puzzles.hellokitty"],
+  "mrks": [{"loc": "SDCARD", "path": "thinkingJigsaw/hellokitty"}]
+}, {
+  "pkgs": ["net.android.wzdworks.magicday"],
+  "mrks": [{"loc": "SDCARD", "path": "inappad"}]
+}, {
+  "pkgs": ["org.thinking.puzzles.mickey"],
+  "mrks": [{"loc": "SDCARD", "path": "thinkingJigsaw/mickey"}]
+}, {
+  "pkgs": ["com.iphonedroid.marca"],
+  "mrks": [{"loc": "SDCARD", "path": "MARCA"}]
+}, {
+  "pkgs": ["com.espn.score_center"],
+  "mrks": [{"loc": "SDCARD", "path": "com.espn.score_center"}]
+}, {
+  "pkgs": ["net.adisasta.androxplorer"],
+  "mrks": [{"loc": "SDCARD", "path": "AndroXplorer"}]
+}, {
+  "pkgs": ["com.inmd.beautystudio"],
+  "mrks": [{"loc": "SDCARD", "path": "Beauty Studio"}]
+}, {
+  "pkgs": ["com.ryan.w.gtunesmusic"],
+  "mrks": [{"loc": "SDCARD", "path": "tunes_home_version"}]
+}, {
+  "pkgs": ["com.sondaica.ispend"],
+  "mrks": [{"loc": "SDCARD", "path": "iSpend"}]
+}, {
+  "pkgs": ["com.android.keepass"],
+  "mrks": [{"loc": "SDCARD", "path": "keepass", "flags": ["keeper"]}]
+}, {
+  "pkgs": ["keepass2android.keepass2android"],
+  "mrks": [{"loc": "SDCARD", "path": "keepass", "flags": ["keeper"]}]
+}, {
+  "pkgs": ["keepass2android.keepass2android_nonet"],
+  "mrks": [{"loc": "SDCARD", "path": "keepass", "flags": ["keeper"]}]
+}, {
+  "pkgs": ["com.layar"],
+  "mrks": [{"loc": "SDCARD", "path": "layar"}]
+}, {
+  "pkgs": ["com.yahoo.mobile.client.android.mail"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "yahoo/mail"},
+	{"loc": "SDCARD", "path": "yahoo/com.yahoo.mobile.client.android.mail"},
+	{"loc": "SDCARD", "path": "Yahoo!/mail"},
+	{"loc": "SDCARD", "path": "Yahoo!/YMail"}
+  ]
+}, {
+  "pkgs": ["com.yahoo.mobile.client.android.im"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "Yahoo!/Messenger"},
+	{"loc": "SDCARD", "path": "yahoo/messenger"},
+	{"loc": "SDCARD", "path": "yahoo/com.yahoo.mobile.client.android.im"}
+  ]
+}, {
+  "pkgs": ["com.yahoo.mobile.client.android.atom"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "yahoo/atom"},
+	{"loc": "SDCARD", "path": "yahoo/com.yahoo.mobile.client.android.atom"}
+  ]
+}, {
+  "pkgs": ["com.yahoo.mobile.client.android.yeti"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "yahoo/yeti"},
+	{"loc": "SDCARD", "path": "yahoo/com.yahoo.mobile.client.android.yeti"}
+  ]
+}, {
+  "pkgs": ["com.yahoo.mobile.client.android.weather"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "yahoo/weather"},
+	{"loc": "SDCARD", "path": "yahoo/com.yahoo.mobile.client.android.weather"}
+  ]
+}, {
+  "pkgs": ["com.yahoo.mobile.client.android.ecauction"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "yahoo/ecauction"},
+	{"loc": "SDCARD", "path": "yahoo/com.yahoo.mobile.client.android.ecauction"}
+  ]
+}, {
+  "pkgs": ["com.yahoo.mobile.client.android.fantasyfootball"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "yahoo/fantasyfootball"},
+	{"loc": "SDCARD", "path": "yahoo/com.yahoo.mobile.client.android.fantasyfootball"}
+  ]
+}, {
+  "pkgs": ["com.yahoo.mobile.client.android.search"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "yahoo/search"},
+	{"loc": "SDCARD", "path": "yahoo/com.yahoo.mobile.client.android.search"}
+  ]
+}, {
+  "pkgs": ["com.yahoo.mobile.client.android.finance"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "yahoo/finance"},
+	{"loc": "SDCARD", "path": "yahoo/com.yahoo.mobile.client.android.finance"}
+  ]
+}, {
+  "pkgs": ["com.yahoo.mobile.client.android.yahoo"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "yahoo/yahoo"},
+	{"loc": "SDCARD", "path": "yahoo/com.yahoo.mobile.client.android.yahoo"}
+  ]
+}, {
+  "pkgs": ["com.yahoo.mobile.client.android.flickr"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "yahoo/flickr"},
+	{"loc": "SDCARD", "path": "yahoo/com.yahoo.mobile.client.android.flickr"}
+  ]
+}, {
+  "pkgs": ["com.yahoo.mobile.client.android.cricket"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "yahoo/cricket"},
+	{"loc": "SDCARD", "path": "yahoo/com.yahoo.mobile.client.android.cricket"}
+  ]
+}, {
+  "pkgs": ["com.tumblr"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "Tumblr", "flags": ["keeper"]},
+	{"loc": "SDCARD", "path": "yahoo/com.tumblr"}
+  ]
+}, {
+  "pkgs": ["com.rike.mobile.music"],
+  "mrks": [{"loc": "SDCARD", "path": "musicwizard"}]
+}, {
+  "pkgs": ["fr.cookbook"],
+  "mrks": [{"loc": "SDCARD", "path": "Mes_Recettes"}]
+}, {
+  "pkgs": ["vsin.t16_funny_photo"],
+  "mrks": [{"loc": "SDCARD", "path": "Pho.to Lab", "flags": ["keeper"]}]
+}, {
+  "pkgs": ["com.adobe.psmobile"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "adobe/psmobile"},
+	{"loc": "SDCARD", "path": "Pictures/Photoshop Express", "flags": ["keeper"]}
+  ]
+}, {
+  "pkgs": ["mobi.qiss.plurq"],
+  "mrks": [{"loc": "SDCARD", "path": "plurk.log"}]
+}, {
+  "pkgs": ["com.roidgame.sketchmet"],
+  "mrks": [{"loc": "SDCARD", "path": "sketchme"}]
+}, {
+  "pkgs": ["com.taggedapp"],
+  "mrks": [{"loc": "SDCARD", "path": ".tagtemp"}]
+}, {
+  "pkgs": ["com.timespread.Timetable2"],
+  "mrks": [{"loc": "SDCARD", "path": "TimeSpread"}]
+}, {
+  "pkgs": ["com.pentabreed.pentatouch"],
+  "mrks": [{"loc": "SDCARD", "path": "touchTalk"}]
+}, {
+  "pkgs": ["bingo.im.msn"],
+  "mrks": [{"loc": "SDCARD", "path": "MSN Droid"}]
+}, {
+  "pkgs": ["com.orux.oruxmapsbeta"],
+  "mrks": [{"loc": "SDCARD", "path": "oruxmaps"}]
+}, {
+  "pkgs": ["com.orux.oruxmaps"],
+  "mrks": [{"loc": "SDCARD", "path": "oruxmaps"}]
+}, {
+  "pkgs": ["com.orux.oruxmapsDonate"],
+  "mrks": [{"loc": "SDCARD", "path": "oruxmaps"}]
+}, {
+  "pkgs": ["com.joymasterrocks.ThreeKTD"],
+  "mrks": [{"loc": "SDCARD", "path": "3KTD"}]
+}, {
+  "pkgs": ["com.icoolme.android.weather"],
+  "mrks": [{"loc": "SDCARD", "path": ".icmweather"}]
+}, {
+  "pkgs": ["com.tencent.WBlog"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "tencent/MicroBlog"},
+	{"loc": "SDCARD", "path": ".wblog-images"},
+	{"loc": "SDCARD", "path": "tencent/weibo"},
+	{"loc": "SDCARD", "path": "tencent/MicroBlog_Refact"}
+  ]
+}, {
+  "pkgs": ["larry.zou.colorfullife"],
+  "mrks": [{"loc": "SDCARD", "path": "picasa_tool"}]
+}, {
+  "pkgs": ["net.hidroid.hibalance"],
+  "mrks": [
+	{"loc": "SDCARD", "path": "HiBalance"},
+	{"loc": "SDCARD", "path": "HiDroid_Net/HiAPN"},
+	{"loc": "SDCARD", "path": "HiDroid_Net/HiBalance"}
+  ]
+}, {
+  "pkgs": ["com.hy.minifetion"],
+  "mrks": [{"loc": "SDCARD", "path": "minifetion"}]
+}, {
+  "pkgs": ["com.voozoo.canimals"],
+  "mrks": [{"loc": "SDCARD", "path": "canimalsBackup"}]
+}, {
+  "pkgs": ["info.laozhang.Qsms"],
+  "mrks": [{"loc": "SDCARD", "path": "Qsms"}]
+}, {
+  "pkgs": [
+	"com.estrongs.android.pop",
+	"com.estrongs.android.pop.cupcake",
+	"com.estrongs.android.pop.app.shortcut",
+	"com.estrongs.android.pop.pro"
+  ],
+  "mrks": [
+	{"loc": "SDCARD", "path": ".ESFileExplorer"},
+	{"loc": "SDCARD", "path": ".estrongs"},
+	{"loc": "SDCARD", "path": ".userReturn"},
+	{"loc": "SDCARD", "path": "ESedited", "flags": ["keeper"]},
+	{"loc": "SDCARD", "path": "dianxin"},
+	{"loc": "SDCARD", "path": ".BD_SAPI_CACHE"},
+	{"loc": "SDCARD", "path": "ESSettings.zip", "flags": ["keeper"]},
+	{"loc": "SDCARD", "path": "backups", "flags": ["keeper", "common"]},
+	{"loc": "SDCARD", "contains": ".escheck.tmp", "regex": "^(?:.+\/)*\\.escheck\\.tmp$"}
+  ]
+}, {
+  "pkgs": ["com.aareader"],
+  "mrks": [{"loc": "SDCARD", "path": "aaRead"}]
+}, {
+  "pkgs": ["com.javaeye.hkliya.dow
