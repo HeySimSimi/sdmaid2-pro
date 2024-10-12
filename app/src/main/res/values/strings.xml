@@ -1,0 +1,235 @@
+<resources>
+    <string name="dashboard_delete_all_message">Delete results in all tools?</string>
+    <string name="dashboard_settings_category">Dashboard</string>
+    <string name="dashboard_motd_title">A message from the developer</string>
+    <string name="dashboard_settings_oneclick_title">One-Tap Mode</string>
+    <string name="dashboard_settings_oneclick_summary">Start scan and deletion for all tools with a tap on the dashboard\'s action button, no extra confirmations.</string>
+    <string name="dashboard_settings_oneclick_tools_title">One-Tap Tools</string>
+    <string name="dashboard_settings_oneclick_tools_desc">Which tools should be included in one-tap operations?</string>
+
+    <string name="debug_debuglog_size_label">Size</string>
+    <string name="debug_debuglog_size_compressed_label">Compressed size</string>
+    <string name="debug_notification_channel_label">Debug notifications</string>
+    <string name="debug_debuglog_file_label">Recorded log file</string>
+    <string name="debug_debuglog_recording_progress">Recording debug log</string>
+    <string name="debug_debuglog_record_action">Record debug log</string>
+    <string name="debug_debuglog_stop_action">Stop recording</string>
+    <string name="debug_debuglog_sensitive_information_message">The generated file contains sensitive information (e.g. file names and installed apps). Only share it with trusted parties.</string>
+    <string name="settings_debuglog_explanation">This feature records everything the app is doing into a shareable file. The generated file contains sensitive information (e.g. file names and installed apps). Only share it with trusted parties (e.g. a developer that is troubleshooting an issue).</string>
+
+    <string name="tasks_activity_notification_channel_label">Active tasks</string>
+    <string name="tasks_activity_working_notification_title">SD Maid is working</string>
+    <plurals name="tasks_activity_active_notification_message">
+        <item quantity="one">%d active task</item>
+        <item quantity="other">%d active tasks</item>
+    </plurals>
+    <plurals name="tasks_activity_queued_notification_message">
+        <item quantity="one">%d task in queue</item>
+        <item quantity="other">%d queued tasks</item>
+    </plurals>
+    <string name="tasks_result_notification_channel_label">Task results</string>
+    <string name="tasks_result_subtext">Task result</string>
+
+    <string name="onboarding_welcome_title">Welcome</string>
+    <string name="onboarding_welcome_body1">SD Maid SE manages files, apps and storage.</string>
+    <string name="onboarding_welcome_body2">Gain storage space by cleaning up behind other apps. Delete expendable files and remove leftover data.</string>
+    <string name="onboarding_welcome_body_beta">This is a beta (testing) build. Proceed with a sense of humor and a backup plan. Please report issues you encounter.</string>
+    <string name="onboarding_welcome_continue_action">Continue</string>
+
+    <string name="onboarding_versus_title">SD Maid / SD Maid SE</string>
+    <string name="onboarding_versus_body1">SD Maid SE (aka. SD Maid 2) is the successor to SD Maid (aka. SD Maid 1). A new app, optimized for modern Android.</string>
+    <string name="onboarding_versus_body2">It\'s predecessor\'s architecture is over 7 years old and not designed for the challenges of newer Android versions. A complete redesign was necessary to continue development.</string>
+    <string name="onboarding_versus_body3">Consider switching to SD Maid SE for improved results.</string>
+    <string name="onboarding_versus_body4">SD Maid 1\'s \"pro status\" is unfortunately not transferable to SD Maid 2/SE. After 12 years of free updates, a new purchase is required to sustain development (feed the developer).</string>
+    <string name="onboarding_versus_continue_action">Continue</string>
+
+    <string name="onboarding_privacy_title">Privacy</string>
+    <string name="onboarding_privacy_body1">SD Maid has no ads and does not sell user data.</string>
+    <string name="onboarding_privacy_bugreport_toggle_body">Bug reports are sent when errors occur and may contain details about apps and files on your device. Reports help me fix bugs and improve the app.</string>
+    <string name="onboarding_privacy_bugreport_toggle">Allow automatic bug reports</string>
+    <string name="onboarding_privacy_bugreport_toggle_hint">These options can be changed in the settings.</string>
+    <string name="onboarding_privacy_continue_action">Continue</string>
+
+    <string name="onboarding_setup_title">Setup</string>
+    <string name="onboarding_setup_body1">SD Maid will search all accessible data areas.</string>
+    <string name="onboarding_setup_body2">What is accessible depends on your device, Android version and granted permissions.</string>
+    <string name="onboarding_setup_body3">Start using SD Maid by setting up access to areas that should be searched.</string>
+    <string name="onboarding_setup_continue_action">Set up access</string>
+
+    <string name="settings_privacy_policy_label">Privacy policy</string>
+    <string name="settings_privacy_policy_desc">Handling data responsibly.</string>
+    <string name="settings_licenses_label">Licenses</string>
+    <string name="settings_category_other_label">Other</string>
+
+    <string name="settings_category_filter_generic">Generic filter</string>
+    <string name="settings_category_filter_specific">Specific filter</string>
+    <string name="settings_sponsor_development_title">Sponsor development</string>
+    <string name="settings_sponsor_development_summary">Become a patron and make continued development possible.</string>
+
+    <string name="general_settings_label">General</string>
+    <string name="general_settings_desc">General tweaks that affect the whole app.</string>
+    <string name="settings_category_ui_label">User interface</string>
+
+    <string name="ui_theme_mode_setting_label">Theme mode</string>
+    <string name="ui_theme_mode_setting_explanation">The mode used when theming the app (e.g. night or day).</string>
+    <string name="ui_theme_mode_dark_label">Dark</string>
+    <string name="ui_theme_mode_light_label">Light</string>
+    <string name="ui_theme_mode_system_label">System</string>
+
+    <string name="ui_theme_style_setting_label">Theme style</string>
+    <string name="ui_theme_style_setting_explanation">The color style used when theming the app.</string>
+    <string name="ui_theme_style_default_label">Default</string>
+    <string name="ui_theme_style_materialyou_label">Material You</string>
+
+    <string name="ui_previews_title">File previews</string>
+    <string name="ui_previews_summary">Display file previews in all tools (e.g. image and video thumbnails).</string>
+
+    <string name="ui_language_override_label">App language</string>
+    <string name="ui_language_override_desc">Select a different language for SD Maid, independent of your system\'s default language. Currently: %s</string>
+
+    <string name="settings_support_label">Support</string>
+    <string name="settings_support_description">Read documentation, report issues, chat with others or record debug logs.</string>
+    <string name="documentation_label">Documentation</string>
+    <string name="issue_tracker_description">A public issue tracker for bug reports and feature requests.</string>
+    <string name="issue_tracker_label">Issue tracker</string>
+    <string name="support_installid_label">Install ID</string>
+    <string name="support_installid_desc">Automatic error reports are anonymous. Share your install ID if the developer needs to find your error reports.</string>
+    <string name="support_debuglog_label">Debug log</string>
+    <string name="support_debuglog_desc">Record everything the app is doing into a text file that you can share.</string>
+    <string name="discord_label">Discord</string>
+    <string name="discord_description">A place to hang out in and ask questions.</string>
+
+    <string name="changelog_label">Changelog</string>
+    <string name="settings_acknowledgements_label">Acknowledgements</string>
+
+    <string name="setup_label">Setup</string>
+    <string name="setup_incomplete_card_title">Setup is incomplete</string>
+    <string name="setup_incomplete_card_body">Finish SD Maid\'s setup to get better results.</string>
+    <string name="setup_incomplete_card_healing_in_progress_body">SD Maid is trying to fix setup issues.</string>
+    <string name="setup_incomplete_card_dismiss_action">Dismiss</string>
+    <string name="setup_incomplete_card_continue_action">Continue setup</string>
+    <string name="setup_title">Setup</string>
+    <string name="setup_forcedshow_summary">Show setup screen again, including already completed items.</string>
+    <string name="setup_checking_card_body">Verifying setup completion and functionality.</string>
+
+    <string name="general_error_setup_require_label">Setup is incomplete</string>
+    <string name="general_error_setup_require_msg">Further set up is required to use this feature. Complete the remaining setup steps.</string>
+
+    <string name="setup_saf_card_title">Storage access framework</string>
+    <string name="setup_saf_card_body">Improve results by granting SD Maid access to additional areas.</string>
+    <string name="setup_saf_card_body2">In most cases the window will open with the correct path preselected. Entries turn green when access is granted. </string>
+    <string name="setup_saf_error_wrong_path">You selected the wrong path</string>
+    <string name="setup_saf_missing_app_error">The Documents UI app is unavailable. It\'s a built-in system app and should be available on all Android devices.</string>
+
+    <string name="setup_manage_storage_card_title">Manage storage</string>
+    <string name="setup_manage_storage_card_body">Allow SD Maid to manage your storage.</string>
+    <string name="setup_manage_storage_card_body2">Basic access to public storage, e.g. "Download/" and "DCIM/", but not always "Android/data".</string>
+
+    <string name="setup_root_card_title">Root access</string>
+    <string name="setup_root_card_body">Should SD Maid use root access if it is available? Root access can be used to check additional system folders and private application data.</string>
+    <string name="setup_root_state_ready_label">Root access is ready.</string>
+    <string name="setup_root_state_waiting_label">Waiting for root access.</string>
+    <string name="setup_root_enable_root_use_label">Use root access if available</string>
+    <string name="setup_root_disable_root_use_label">Don\'t use root access</string>
+    <string name="setup_root_card_body2">Only available on rooted devices. If you didn\'t make this modification, then your device is not rooted and this setting has no effect.</string>
+
+    <string name="setup_shizuku_card_title">Shizuku</string>
+    <string name="setup_shizuku_card_body">Allow SD Maid to use Shizuku where possible to improve results and enable features.</string>
+    <string name="setup_shizuku_card_body2">This setting has no effect if the Shizuku app is not set up on your device.</string>
+    <string name="setup_shizuku_card_root_info">Shizuku in combination with root access does not enable additional features, but it improves reliability. SD Maid will use it as fallback method.</string>
+    <string name="setup_shizuku_state_ready_label">Shizuku link is ready.</string>
+    <string name="setup_shizuku_state_waiting_label">Waiting for link with Shizuku.</string>
+    <string name="setup_shizuku_enable_shizuku_use_label">Use Shizuku if available</string>
+    <string name="setup_shizuku_disable_shizuku_use_label">Don\'t use Shizuku</string>
+
+    <string name="setup_dismiss_hint">You can find the setup screen again via the settings menu.</string>
+    <string name="setup_permission_granted_label">Permission granted</string>
+    <string name="setup_permission_error_label">Permission error</string>
+
+    <string name="setup_usagestats_title">Usage statistics</string>
+    <string name="setup_usagestats_body">The usage statistics permission grants access to more app details. SD Maid uses it to determine additional cache sizes.</string>
+    <string name="setup_usagestats_hint">Required for accessibility service based cache deletion.</string>
+
+    <string name="setup_notification_title">Notifications</string>
+    <string name="setup_notification_body">Allow SD Maid to post notifications to inform you about on-going operations or important events.</string>
+    <string name="setup_notification_hint">Notifications are used sparingly 🤞</string>
+
+    <string name="setup_feature_requires_additional_setup_x">This feature requires completing additional setup items: %s</string>
+
+    <string name="setup_acs_card_title">Accessibility service</string>
+    <string name="setup_acs_card_body">The accessibility service allows SD Maid to interact with your screen and automate tedious actions, e.g. tapping \"Clear cache\" on multiple screens.</string>
+    <string name="setup_acs_card_body2">SD Maid will not use the accessibility service without your consent, will always display a prominent (cancelable) indicator while active and will not use it to collect information.</string>
+    <string name="setup_acs_state_enabled">Accessibility service is enabled</string>
+    <string name="setup_acs_state_disabled">Accessibility service is disabled</string>
+    <string name="setup_acs_state_running">Accessibility service is running</string>
+    <string name="setup_acs_state_ondemand">Service will be launched on demand</string>
+    <string name="setup_acs_state_stopped">Accessibility service is stopped</string>
+    <string name="setup_acs_state_stopped_hint">The service is enabled, but not running. Toggle it off/on or reboot your device. Check that SD Maid is not being "optimized" by the system.</string>
+    <string name="setup_acs_state_stopped_hint_miui">If the service keeps getting disabled after a while, try enabling the "Auto Start" option for SD Maid in the system settings.</string>
+    <string name="setup_acs_consent_positive_action">Enable service and grant access</string>
+    <string name="setup_acs_consent_negative_action">Don\'t use accessibility service</string>
+    <string name="setup_acs_allow_hint">If you see a little icon on the screen edge, then you accidentally enabled the "shortcut" option.</string>
+    <string name="setup_acs_disallow_hint">If you change your mind, you can alter this option again by going into settings and restarting the setup.</string>
+    <string name="setup_acs_appops_restriction_title">Restricted settings</string>
+    <string name="setup_acs_appops_restriction_body">Can\'t enable SD Maids accessibility service? Android 13+ may apply restrictions to apps not installed via Google Play. Lift these restrictions from the system\'s detail page for SD Maid. The option is in the context menu in the top right corner.</string>
+
+    <string name="setup_inventory_card_title">App inventory</string>
+    <string name="setup_inventory_card_body">SD Maid needs to know which apps you have to find files that don\'t belong to any installed apps.</string>
+    <string name="setup_inventory_card_extra">Look for a permission called \"App list\" or \"Query all packages\".</string>
+
+    <string name="setup_inventory_invalid_message">The system provided an invalid list of installed apps (e.g. too few or some were missing). Go to system settings and allow SD Maid access to \"App list\".</string>
+
+    <string name="dataarea_warningcard_empty_message">SD Maid didn\'t find any data areas that can be scanned. Did you complete the setup?</string>
+    <string name="dataarea_warningcard_label">Data areas</string>
+    <string name="dataarea_warningcard_reload_action">Reload data areas</string>
+
+    <string name="debug_mode_label">Debug mode</string>
+    <string name="debug_mode_explanation">Enable test options and more verbose output. App will run slower and perform differently.</string>
+    <string name="debug_bugreporter_label">Automatic bug reports</string>
+    <string name="debug_bugreporter_summary">Automatically reports issues, e.g. details on the app crashes so I can figure out why and fix it.</string>
+
+    <string name="settings_category_tools_label">Tools</string>
+    <string name="settings_category_filter">Filter</string>
+    <string name="settings_category_risklevel">Risk level</string>
+
+    <string name="corpsefinder_tool_name">CorpseFinder</string>
+    <string name="corpsefinder_explanation_short">Data belonging to already removed apps.</string>
+    <string name="corpsefinder_settings_summary">Adjust scan filters and risk levels.</string>
+    <string name="corpsefinder_settings_risk_keeper_title">Include desirable remnants</string>
+    <string name="corpsefinder_settings_risk_keeper_summary">Files that you might want to keep, even if the app is uninstalled, e.g. photos you took or backups you created.</string>
+    <string name="corpsefinder_settings_risk_common_title">Include common names</string>
+    <string name="corpsefinder_settings_risk_common_summary">Data with commonly used names, e.g. a folder \"Notes\" is owned by too many unknown apps.</string>
+    <string name="corpsefinder_watcher_title">Uninstall watcher</string>
+    <string name="corpsefinder_watcher_summary">Automatically scan for remnants when an app removed.</string>
+    <string name="corpsefinder_watcher_autodelete_title">Automatic deletion</string>
+    <string name="corpsefinder_watcher_autodelete_summary">Automatically delete any remnants related to the uninstalled app.</string>
+    <plurals name="corpsefinder_watcher_notification_scan_result">
+        <item quantity="one">%1$d remnant found after uninstalling %2$s.</item>
+        <item quantity="other">%1$d remnants found after uninstalling %2$s.</item>
+    </plurals>
+    <plurals name="corpsefinder_watcher_notification_delete_result">
+        <item quantity="one">Clean up successful (%1$s): Freed %2$s and removed %3$d item.</item>
+        <item quantity="other">Clean up successful (%1$s): Freed %2$s and removed %3$d items.</item>
+    </plurals>
+    <string name="corpsefinder_watcher_notification_delete_action">Delete remnants</string>
+
+    <string name="corpsefinder_filter_publicmedia_label">Public media</string>
+    <string name="corpsefinder_filter_publicmedia_summary">Public media files, e.g. files received via messenger apps.</string>
+    <string name="corpsefinder_filter_publicobb_label">OBB resources</string>
+    <string name="corpsefinder_filter_publicobb_summary">Additional app resources, e.g. game assets.</string>
+    <string name="corpsefinder_filter_publicdata_label">Public app data</string>
+    <string name="corpsefinder_filter_publicdata_summary">Non-sensitive app data, e.g. map caches.</string>
+    <string name="corpsefinder_filter_sdcard_label">SD card</string>
+    <string name="corpsefinder_filter_sdcard_summary">General public storage, internal and external (e.g. SD cards).</string>
+    <string name="corpsefinder_filter_privatedata_label">Private app data</string>
+    <string name="corpsefinder_filter_privatedata_summary">Private app data, e.g. credentials, app settings but also browser caches.</string>
+    <string name="corpsefinder_filter_dalvik_label">Dalvik cache</string>
+    <string name="corpsefinder_filter_dalvik_summary">Cached app execution data.</string>
+    <string name="corpsefinder_filter_applib_label">App libraries</string>
+    <string name="corpsefinder_filter_applib_summary">App related library data.</string>
+    <string name="corpsefinder_filter_appsource_label">App sources</string>
+    <string name="corpsefinder_filter_appsource_summary">App installation data, i.e. where APKs go.</string>
+    <string name="corpsefinder_filter_appsource_private_label">Private app sources</string>
+    <string name="corpsefinder_filter_appsource_private_summary">Restricted app installation data, e.g. protected third party apps.</string>
+    <string name="corpsefinder_filter_appasec_label">Encrypted app resources</string>
+    <string name="Can
